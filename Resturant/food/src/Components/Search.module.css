@@ -1,0 +1,7 @@
+.bar {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  transition: border-color 0.3s;
+  border-bottom: 2px #ccc;
+}

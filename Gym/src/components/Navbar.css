@@ -1,0 +1,126 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  background-color: none; /* Transparent background */
+  margin: 10px 10px auto;
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Stick to the top of the viewport */
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  justify-content: space-between;
+  z-index: 10; /* Higher z-index to ensure navbar is in front */
+  color: aliceblue;
+  left: 0;
+  transition: background-color 0.6s ease, transform 0.3s ease;
+}
+.navbar.dark {
+  background-color: rgba(207, 167, 55, 0.689);
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 2px;
+}
+
+/* Icon styles */
+.icon {
+  display: flex;
+}
+
+.icon p {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin: 30px;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Navbar image styles */
+.navbar img {
+  width: 100px;
+  margin: 2px;
+  padding-left: 30px;
+  z-index: 11; /* Ensure image is behind the navbar (redundant here, but okay) */
+  cursor: pointer;
+}
+
+/* List styles */
+.list {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  transition: 0.3s ease-in;
+}
+
+.list p {
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.link:hover {
+  color: #b68a12f6;
+}
+
+/* Content styles */
+body {
+  margin: 0;
+}
+
+.content {
+  margin-top: 70px; /* Space for the fixed navbar */
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Mobile Menu Icon */
+.men-icon {
+  display: none; /* Hidden by default */
+  align-items: center; /* Align items vertically */
+  justify-content: flex-start; /* Align items to the start horizontally */
+  margin-right: 100px;
+}
+
+.men-icon img {
+  width: 10px;
+  position: absolute;
+  filter: brightness(0) invert(1);
+}
+
+/* Show menu icon and hide navbar list on small screens */
+@media screen and (max-width: 850px) {
+  .men-icon {
+    display: flex; /* Show the menu icon */
+  }
+  .men-icon img {
+    width: 50px;
+  }
+  .icon img {
+    margin-top: 5px;
+    width: 80px;
+  }
+
+  .list {
+    display: none; /* Hide list items in navbar */
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+    background-color: rgb(207, 166, 55);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    padding-bottom: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Initially hidden off-screen */
+    padding-top: 100px;
+  }
+
+  .list.open {
+    transform: translateX(0); /* Slide in */
+  }
+}

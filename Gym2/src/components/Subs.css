@@ -1,0 +1,54 @@
+.subs {
+  display: flex;
+  flex-direction: column; /* Ensure children are stacked vertically */
+  align-items: center; /* Center the .cards horizontally */
+  margin: 40px auto; /* Center the .subs container itself */
+  padding: 20px;
+  width: 90%; /* Adjust as needed */
+}
+
+.cards {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center;
+  gap: 55px; /* Space between cards */
+  flex-wrap: wrap; /* Wrap cards on smaller screens */
+  max-width: 1200px; /* Optional: Set a max width for better control */
+  width: 100%; /* Make sure the cards container takes full width */
+}
+
+.type {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.205);
+  transition: 0.3s ease-in-out;
+  text-align: center; /* Center text within each card */
+  flex: 1; /* Allow cards to grow and shrink as needed */
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.type h5 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.type img {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Optional: Limit image size */
+  border-radius: 30px;
+}
+ul {
+  list-style: none;
+}
+.type ul li {
+  font-size: 30px;
+  text-align: left;
+}
+.type:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.563);
+  transform: scale(1.1);
+}
+.type p {
+  padding-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}

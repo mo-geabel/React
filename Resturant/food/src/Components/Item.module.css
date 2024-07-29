@@ -1,0 +1,40 @@
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
+}
+.ItemImage {
+  max-width: 100%;
+  height: auto;
+}
+.ItemContainer {
+  justify-content: center;
+}
+.Itemname {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  color: #393e46;
+  font-size: 1em;
+}
+.ItemButton {
+  border: none;
+  background-color: rgb(117, 207, 26);
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+}
+.ButtonContainer {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
