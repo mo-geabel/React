@@ -3,7 +3,7 @@ import Foodlist from "./FoodList";
 import styles from "./Search.module.css";
 export default function Search({ setQuery, setFood, query }) {
   const URl = "https://api.spoonacular.com/recipes/complexSearch";
-  const API = "c2986a3bb6274ba3b45598a973d3764c";
+  const API = "put API";
 
   useEffect(() => {
     async function Food() {
